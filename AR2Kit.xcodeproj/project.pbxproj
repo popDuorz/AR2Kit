@@ -12,6 +12,7 @@
 		A21E28AF1F939E7500F82E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21E28AE1F939E7500F82E30 /* Assets.xcassets */; };
 		A21E28B21F939E7500F82E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21E28B01F939E7500F82E30 /* LaunchScreen.storyboard */; };
 		A21E28BA1F939EE200F82E30 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E28B91F939EE200F82E30 /* ARViewController.swift */; };
+		A2B9E1151F945DBD006A1D4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B9E1141F945DBD006A1D4E /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A21E28B11F939E7500F82E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A21E28B31F939E7500F82E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A21E28B91F939EE200F82E30 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		A2B9E1141F945DBD006A1D4E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A21E28A61F939E7500F82E30 /* AR2Kit */ = {
 			isa = PBXGroup;
 			children = (
+				A2B9E1141F945DBD006A1D4E /* art.scnassets */,
 				A21E28B91F939EE200F82E30 /* ARViewController.swift */,
 				A21E28A71F939E7500F82E30 /* AppDelegate.swift */,
 				A21E28AB1F939E7500F82E30 /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21E28B21F939E7500F82E30 /* LaunchScreen.storyboard in Resources */,
+				A2B9E1151F945DBD006A1D4E /* art.scnassets in Resources */,
 				A21E28AF1F939E7500F82E30 /* Assets.xcassets in Resources */,
 				A21E28AD1F939E7500F82E30 /* Main.storyboard in Resources */,
 			);

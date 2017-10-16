@@ -30,14 +30,13 @@ class ARViewController: UIViewController {
         sceneView.session.pause()
     }
     
-    func addBox(x: Float = 0, y: Float = 0, z: Float = -0.2){
-        let box = SCNBox(width: 0.05, height: 0.05, length: 0.05, chamferRadius: 0.001);
+    func addBox(x: Float = 0, y: Float = 0, z: Float = -0.4){
+    
+        let scene = SCNScene(named: "art.scnassets/lowpoly_tree_sample.dae")
+        let airNode = scene?.rootNode.childNode(withName: "Tree_lp_11", recursively: true)
+        airNode!.position = SCNVector3(x, y, z)
         
-        let boxNode = SCNNode()
-        boxNode.geometry = box
-        boxNode.position = SCNVector3(x, y, z)
-        
-        sceneView.scene.rootNode.addChildNode(boxNode)
+        sceneView.scene.rootNode.addChildNode(airNode!)
     }
     
     func addTapGestureToScene(){
