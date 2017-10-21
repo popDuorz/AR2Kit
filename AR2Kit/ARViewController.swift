@@ -21,7 +21,8 @@ class ARViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBox()
+        //addBox()
+        addEarth()
         addTapGestureToScene()
     }
 
@@ -37,6 +38,19 @@ class ARViewController: UIViewController {
         airNode!.position = SCNVector3(x, y, z)
         
         sceneView.scene.rootNode.addChildNode(airNode!)
+    }
+    
+    func addEarth() {
+        let earth = SCNNode()
+        earth.geometry = SCNSphere(radius: 1.0)
+        earth.geometry?.firstMaterial?.diffuse.contents = "art.scnassets/earth/earth-diffuse-mini.jpg"
+        earth.geometry?.firstMaterial?.emission.contents = "art.scnassets/earth/earth-emission-mini.jpg"
+        earth.geometry?.firstMaterial?.specular.contents = "art.scnassets/earth/earth-specular-mini.jpg"
+        earth.position = SCNVector3(0.0, 0.0, -4.0)
+        let rotateEarth = SCNAction.rotateBy(x: 0.0, y: 10.0, z: 0.0, duration: 5.0)
+        let rotateForever = SCNAction.repeatForever(rotateEarth)
+        earth.runAction(rotateForever)
+        sceneView.scene.rootNode.addChildNode(earth)
     }
     
     func addTapGestureToScene(){
